@@ -1,0 +1,46 @@
+@import url(variables.css);
+
+@media (min-width: 600px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    nav {
+        display: block;
+        position: static;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    nav li {
+        font-size: 1.4rem;
+        padding: 0px;
+    }
+
+    nav a {
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 800px) {
+    nav {
+        width: 600px;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 1.4rem;
+    }
+}

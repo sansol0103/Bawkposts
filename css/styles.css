@@ -1,0 +1,33 @@
+@import url(variables.css);
+
+header, footer {
+    background-color: var(--color-header-footer);
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav {
+    display: none;
+    position: fixed;
+    background: var(--color-header-footer);
+    z-index: 10;
+}
+
+nav li {
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    font-size: 1.6rem;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
