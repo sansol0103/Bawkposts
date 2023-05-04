@@ -1,0 +1,42 @@
+input,
+textarea {
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+textarea {
+    min-height: 220px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.form-wrapper > * {
+    margin: 10px auto;
+}
+
+.contact-cta {
+    font-size: 1.2rem;
+    background-color: #c2c2c2;
+    border-radius: 10px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+}
+
+.contact-cta:disabled {
+    cursor: not-allowed;
+}
+
+.contact-cta:hover {
+    background-color: #4ee05d;
+    border: 2px solid #000;
+}

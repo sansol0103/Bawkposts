@@ -1,5 +1,9 @@
 @import url(variables.css);
 
+body {
+    margin: 0px;
+}
+
 header, footer {
     background-color: var(--color-header-footer);
 }
@@ -9,18 +13,41 @@ header, footer {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    font-family: var(--header-font)
+}
+
+header p {
+    margin: 0px 20px 0px 50px;
+}
+
+.title {
+    font-size: 2.4rem;}
+
+.slogan {
+    font-size: 1.5rem;
 }
 
 nav {
     display: none;
     position: fixed;
+    text-align: left;
+    font-family: var(--main-font);
+    font-weight: 300;
+    border-radius: 0px 0px 20px 20px;
+    width: 155px;
+    top: 74px;
+    right: 0px;
     background: var(--color-header-footer);
     z-index: 10;
 }
 
+nav ul {
+    padding: 0px;
+}
+
 nav li {
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-align: center;
     display: block;
     font-size: 1.6rem;
@@ -31,3 +58,75 @@ nav a {
     text-decoration: none;
 }
 
+.fa-bars {
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+/*Main*/
+
+main {
+    overflow: hidden;
+    font-family: var(--main-font);
+}
+
+.box-style {
+    width: 80%;
+}
+
+.wrapper {
+    background-color: var(--color-wrapper);
+    padding: 10px 0px;
+}
+
+/*Footer*/
+
+footer {
+    font-family: var(--main-font);
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer div {
+    max-width: 170px;
+}
+
+footer p {
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.close-p {
+    line-height: 0.2;
+}
+
+.copyright-text {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+footer input {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+    min-width: 170px;
+}
+
+.cta {
+    padding: 2px 12px;
+}
+
+.cta:hover {
+    background-color: #4ee05d;
+    border: 2px solid #000;
+}

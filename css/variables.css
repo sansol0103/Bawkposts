@@ -1,3 +1,6 @@
 :root {
     --color-header-footer: #f98f43;
+    --color-wrapper: #e1e1e1;
+    --header-font: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+    --main-font: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }

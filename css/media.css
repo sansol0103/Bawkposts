@@ -7,6 +7,10 @@
         justify-content: flex-start;
     }
 
+    header label {
+        display: none;
+    }
+
     nav {
         display: block;
         position: static;
@@ -21,16 +25,25 @@
 
     nav li {
         font-size: 1.4rem;
-        padding: 0px;
     }
 
     nav a {
         padding: 10px;
         width: 100%;
     }
+
+    .current {
+        text-decoration: underline;
+    }
 }
 
 @media (min-width: 800px) {
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
     nav {
         width: 600px;
     }

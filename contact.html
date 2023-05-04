@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Welcome to Bawkposts, don't chicken out!"
+      content="Contact Bawkposts"
     />
-    <title>Bawkposts | Home Page</title>
+    <title>Bawkposts | Contact</title>
     <script src="https://kit.fontawesome.com/90b4883912.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300;400&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/media.css">
   </head>
   <body>
@@ -27,16 +27,27 @@
       <input type="checkbox" name="" id="hamburger-menu" />
       <nav>
         <ul>
-          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="blogs.html">Blogs</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="current">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="top-image">
-      </div>
+      <form>
+        <div class="box-style form-wrapper">
+          <label for="name">Full name</label>
+          <input type="text" name="Full name" id="name">
+          <label for="email">Email</label>
+          <input type="email" name="Email address" id="email">
+          <label for="subject">Subject</label>
+          <input type="text" name="Subject" id="subject">
+          <label for="message">Message</label>
+          <textarea type="text" value="Message" id="message"></textarea>
+          <button class="cta contact-cta">Send message</button>
+        </div>
+      </form>
     </main>
     <footer>
       <div class="copyright">
