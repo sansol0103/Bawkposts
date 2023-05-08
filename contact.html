@@ -39,12 +39,16 @@
         <div class="box-style form-wrapper">
           <label for="name">Full name</label>
           <input type="text" name="Full name" id="name">
+          <div class="form-error" id="nameError">Please enter your full name</div>
           <label for="email">Email</label>
           <input type="email" name="Email address" id="email">
+          <div class="form-error" id="emailError">Please enter a valid email address</div>
           <label for="subject">Subject</label>
           <input type="text" name="Subject" id="subject">
+          <div class="form-error" id="subjectError">The subject must be 15 characters or longer</div>
           <label for="message">Message</label>
           <textarea type="text" value="Message" id="message"></textarea>
+          <div class="form-error" id="messageError">Your message needs to be 25 characters or longer</div>
           <button class="cta contact-cta">Send message</button>
         </div>
       </form>
@@ -76,5 +80,6 @@
         />
       </div>
     </footer>
+    <script src="js/contact.js"></script>
   </body>
 </html>

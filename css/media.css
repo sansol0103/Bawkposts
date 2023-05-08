@@ -41,6 +41,11 @@
     footer {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    /*blogs.html*/
+    .blog-posts {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media (min-width: 900px) {
