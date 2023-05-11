@@ -1,12 +1,8 @@
-@import url(variables.css);
-
-.temp-box {
-    width: 600px;
-    height: 500px;
-    margin: 50px auto;
-    background-color: var(--color-wrapper);
+main {
+    display: flex;
+    flex-direction: column;
 }
 
-.box-style {
-    margin: auto;
+.image {
+    background: url(../images/Hedemora_1.webp);
 }

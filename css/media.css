@@ -2,7 +2,6 @@
 
 @media (min-width: 600px) {
     header {
-        display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
     }
@@ -35,6 +34,12 @@
     .current {
         text-decoration: underline;
     }
+
+    /*blogs.html*/
+
+    .blog-posts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media (min-width: 800px) {
@@ -43,8 +48,16 @@
     }
 
     /*blogs.html*/
+
     .blog-posts {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    /*about.html*/
+
+    .image {
+        max-width: 600px;
+        max-height: 500px;
     }
 }
 

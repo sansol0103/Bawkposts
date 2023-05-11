@@ -1,6 +1,6 @@
 // Base URL
 const apiBase = 'http://bawkposts.local';
-const blogPosts = '/wp-json/wp/v2/posts?_embed';
+const blogPosts = '/wp-json/wp/v2/posts?per_page=50&_embed=1';
 
 // Full URL
 const fullURL = apiBase + blogPosts;

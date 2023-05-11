@@ -14,7 +14,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: var(--header-font)
+    font-family: var(--header-font);
+    padding: 10px;
 }
 
 header p {
@@ -80,6 +81,13 @@ main {
 
 .box-style {
     width: 80%;
+    margin: 50px auto;
+}
+
+.image {
+    width: 75%;
+    height: 70%;
+    margin: 50px auto;
 }
 
 .wrapper {
