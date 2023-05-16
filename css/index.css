@@ -1,4 +1,34 @@
-.top-image {
-    height: 360px;
+.header_img {
+    max-height: 360px;
     width: 100%;
+    object-fit: cover;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.featured-post, .about-me {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 30px;
+    padding: 20px;
+}
+
+.posts-container, .about-me {
+    max-width: 350px;
+    max-height: 400px;
+}
+
+.about-me {
+    border-radius: 10px;
+}
+
+.featured-text {
+    font-size: 1.6rem;
+}
+
+.image {
+    margin: 0px;
 }

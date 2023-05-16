@@ -54,7 +54,7 @@ nav li {
     font-size: 1.6rem;
 }
 
-nav a {
+nav a, .return-home, .featured-post a {
     color: black;
     text-decoration: none;
 }
@@ -98,7 +98,7 @@ main {
 /*Footer*/
 
 footer {
-    font-family: var(--main-font);
+    font-family: var(--header-font);
     display: grid;
     justify-content: center;
     padding: 10px;
