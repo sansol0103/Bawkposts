@@ -35,6 +35,16 @@
         text-decoration: underline;
     }
 
+    /*index.html*/
+
+    .main-section {
+        flex-direction: row;
+    }
+
+    .featured-post, .about-me {
+        margin: 15px 30px;
+    }
+
     /*blogs.html*/
 
     .blog-posts {
