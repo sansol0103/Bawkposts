@@ -54,7 +54,7 @@ nav li {
     font-size: 1.6rem;
 }
 
-nav a, .return-home, .featured-post a {
+nav a, .return-home, .featured-post a, .read-more, .carousel > a {
     color: black;
     text-decoration: none;
 }

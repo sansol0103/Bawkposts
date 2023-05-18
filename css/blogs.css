@@ -21,3 +21,10 @@
     max-width: 200px;
     max-height: 200px;
 }
+
+.toggle {
+    margin: 30px auto;
+    display: flex;
+    font-size: 1.6rem;
+    cursor: pointer;
+}

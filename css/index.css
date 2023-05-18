@@ -51,23 +51,31 @@
     object-fit: cover;
 }
 
+.carousel-wrapper {
+    display: flex;
+}
+
 .carousel {
-    width: 100vw;
+    max-width: 830px;
     height: 50vh;
     position: relative;
     display: flex;
     flex-direction: row;
+    overflow-x: hidden;
+    margin: auto;
+    gap: 10px;
+    scroll-behavior: smooth;
 }
 
 .carousel-container > img{
-    max-width: 300px;
-    max-height: 250px;
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
 }
 
-.carousel > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.carousel-container > a {
+    margin-top: 20px;
+    display: flex;
 }
 
 .slide {
@@ -88,46 +96,23 @@
 }
 
 .carousel-button {
-    position: absolute;
     z-index: 2;
     background: none;
     border: none;
     font-size: 4rem;
-    top: 50%;
-    transform: translateY(-50%);
     color: rgba(255, 255, 255, .5);
     cursor: pointer;
     border-radius: .25rem;
     padding: 0.5rem;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, .4);
 }
 
 .carousel-button:hover,
 .carousel-button:focus {
     color: white;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .6);
 }
 
 .carousel-button:focus {
     outline: 1px solid black;
-}
-
-.carousel-button.prev {
-    left: 1rem;
-}
-
-.carousel-button.next {
-    right: 1rem;
-}
-
-.color1 {
-    background-color: aqua;
-}
-
-.color2 {
-    background-color: blueviolet;
-}
-
-.color3 {
-    background-color: red;
 }

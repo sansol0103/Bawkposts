@@ -1,9 +1,4 @@
-// Base URL
-const apiBase = 'http://bawkposts.local';
-const blogPosts = '/wp-json/wp/v2/posts?per_page=50&_embed=1';
-
-// Full URL
-const fullURL = apiBase + blogPosts;
+import { fullURL, page2URL, showAllPostsURL } from "./url.js";
 
 // Fetch
 
@@ -19,8 +14,9 @@ console.log(getPosts());
 
 // Create HTML
 
+const container = document.querySelector('.blog-posts');
+
 function createHTML(posts) {
-    const container = document.querySelector('.blog-posts');
 
     const postsContainer = document.createElement('a');
     postsContainer.href = "blog-specific.html?id=" + posts.id;
@@ -30,7 +26,6 @@ function createHTML(posts) {
     const title = document.createElement('h2');
     title.innerText = posts.title.rendered;
     postsContainer.append(title);
-
 
     if (posts._embedded['wp:featuredmedia']) {
         const image = document.createElement('img');
@@ -51,6 +46,27 @@ function handlePosts(posts) {
         createHTML(posts[i]);
     }
 }
+
+// Toggle shown posts
+
+const toggleButton = document.querySelector('.toggle');
+
+toggleButton.addEventListener('click', () => {
+    getPostsPage2(page2URL).then(handlePosts);
+    toggleButton.style.display = 'none';
+});
+
+// Create posts from page 2
+
+async function getPostsPage2(page2URL) {
+    const response = await fetch(page2URL);
+
+    const posts = await response.json();
+
+    return posts;
+}
+
+// Main
 
 async function main() {
     const posts = await getPosts();

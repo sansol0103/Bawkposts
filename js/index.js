@@ -1,7 +1,7 @@
-import { fullURL } from './url.js';
+import { showAllPostsURL } from './url.js';
 
 async function getPost() {
-    const response = await fetch(fullURL);
+    const response = await fetch(showAllPostsURL);
 
     const posts = await response.json();
 
@@ -47,18 +47,14 @@ function createHTML(posts) {
 
 // Carousel
 
-function createCarousel(posts) {
-    const carousel = document.querySelector("[data-carousel]");
+const carousel = document.querySelector("[data-carousel]");
+
+function createCarouselPosts(posts) {
 
     const carouselContainer = document.createElement('a');
     carouselContainer.href = "blog-specific.html?id=" + posts.id;
-    carouselContainer.className = 'carousel-container';
+    carouselContainer.className = 'carousel-container', 'wrapper';
     carouselContainer.id = posts.id;
-
-    const title = document.createElement('h2');
-    title.innerText = posts.title.rendered;
-    carouselContainer.append(title);
-
 
     if (posts._embedded['wp:featuredmedia']) {
         const image = document.createElement('img');
@@ -71,13 +67,32 @@ function createCarousel(posts) {
         carouselContainer.append(noImage);
     }
 
+    const title = document.createElement('p');
+    title.innerText = posts.title.rendered;
+    carouselContainer.append(title);
+
     carousel.append(carouselContainer);
 }
+
+// Carousel buttons
+
+const leftCarouselButton = document.querySelector('.prev');
+const rightCarouselButton = document.querySelector('.next');
+
+leftCarouselButton.addEventListener('click', () => {
+    carousel.scrollLeft += -210;
+});
+
+rightCarouselButton.addEventListener('click', () => {
+    carousel.scrollLeft += 210;
+});
+
+// Handle posts
 
 function handlePost(posts) {
     for (let i = 0; i < posts.length; i++) {
         createHTML(posts[i]);
-        createCarousel(posts[i]);
+        createCarouselPosts(posts[i]);
     }
 }
 
