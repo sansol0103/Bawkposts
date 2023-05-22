@@ -5,19 +5,25 @@
     display: flex;
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
+.image:hover {
+    cursor: pointer;
 }
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+.modal-container {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 10;
+}
+
+.modal-image {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 600px;
+    width: 100%;
 }

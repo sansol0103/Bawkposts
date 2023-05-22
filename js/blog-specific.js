@@ -16,8 +16,6 @@ async function getPost() {
     return post;
 }
 
-getPost();
-
 console.log(getPost());
 
 function createHTML(post) {
@@ -33,6 +31,23 @@ function createHTML(post) {
         image.alt = post._embedded['wp:featuredmedia'][0].alt_text;
         image.classList.add('image');
         container.append(image);
+        
+        image.addEventListener('click', () => {
+            const modalContainer = document.createElement('div');
+            modalContainer.classList.add('modal-container');
+
+            const modalImage = document.createElement('img');
+            modalImage.src = post._embedded['wp:featuredmedia'][0].source_url;
+            modalImage.alt = post._embedded['wp:featuredmedia'][0].alt_text;
+            modalImage.classList.add('modal-image');
+            modalContainer.append(modalImage);
+
+            document.body.append(modalContainer);
+
+            modalContainer.addEventListener('click', () => {
+                modalContainer.remove();
+            })
+        });
     } else {
         const noImage = document.createElement('p');
         noImage.innerText = 'No image available';
