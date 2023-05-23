@@ -9,7 +9,7 @@ const params = new URLSearchParams(queryString);
 const postId = params.get('id');
 
 async function getPost() {
-    const response = await fetch('http://bawkposts.local/wp-json/wp/v2/posts/' + postId + '?_embed');
+    const response = await fetch('http://www.bawkposts.no/wp-json/wp/v2/posts/' + postId + '?_embed');
 
     const post = await response.json();
 
