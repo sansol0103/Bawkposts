@@ -1,5 +1,5 @@
 // Base URLs
-const apiBase = 'http://www.bawkposts.no';
+const apiBase = 'https://www.bawkposts.no';
 const blogPosts = '/wp-json/wp/v2/posts';
 const showAllBlogPosts = '?per_page=50';
 const page2 = '?page=2';
