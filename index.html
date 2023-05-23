@@ -9,6 +9,17 @@
       content="Welcome to Bawkposts, don't chicken out!"
     />
     <title>Bawkposts | Home Page</title>
+    <!-- Hotjar Tracking Code for Bawkposts -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3503646,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
     <script src="https://kit.fontawesome.com/90b4883912.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,15 +51,15 @@
       <img src="images/Wandering_chickens_1.webp" class="header_img" alt="Picture of chickens out wandering">
       <div class="main-section">
         <div class="featured-post">
-          <p class="featured-text">Highlighted post</p>
+          <h2 class="featured-text">Highlighted post</h2>
         </div>
-        <div class="about-me wrapper">
-          <h2>About me</h2>
+        <div class="chicken-fact wrapper">
+          <h2 class="featured-text">Chicken fact</h2>
           <p>tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque</p>
         </div>
       </div>
       <div aria-label="Featured posts" class="featured-posts">
-        <h2>Featured posts</h2>
+        <h2 class="featured-text">Featured posts</h2>
         <div class="carousel-wrapper">
           <button class="carousel-button prev" data-carousel-button="prev">&#10594;</button>
           <div class="carousel" data-carousel></div>
@@ -72,15 +83,16 @@
           <p>bawkposts@gmail.com</p>
         </div>
       </div>
-      <div class="newsletter-sub">
-        <p>Sign up for updates here</p>
-        <label for="email-adress">Email adress</label>
-        <input type="email" name="Email adress" id="email-adress" />
-        <input
-          type="submit"
-          value="I wish to recieve e-mail updates"
-          class="cta"
-        />
+      <div class="icons">
+        <a href="https://instagram.com"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://facebook.com"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://twitter.com"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
       </div>
     </footer>
     <script src="js/index.js" type="module" defer></script>

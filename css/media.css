@@ -41,7 +41,7 @@
         flex-direction: row;
     }
 
-    .featured-post, .about-me {
+    .featured-post, .chicken-fact {
         margin: 15px 30px;
     }
 
@@ -57,16 +57,14 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .icons {
+        text-align: left;
+    }
+
     /*blogs.html*/
 
     .blog-posts {
         grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    /*about.html*/
-
-    .image {
-        max-width: 600px;
     }
 }
 

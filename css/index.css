@@ -10,7 +10,7 @@
     justify-content: space-around;
 }
 
-.featured-post, .about-me {
+.featured-post, .chicken-fact {
     display: flex;
     flex-direction: column;
     margin: 15px auto;
@@ -18,7 +18,7 @@
     text-align: center;
 }
 
-.posts-container, .about-me {
+.posts-container, .chicken-fact {
     max-width: 350px;
     max-height: 400px;
     display: flex;
@@ -38,12 +38,15 @@
     background-color: azure;
 }
 
-.about-me {
+.chicken-fact {
     border-radius: 10px;
 }
 
 .featured-text {
     font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
 }
 
 .image {

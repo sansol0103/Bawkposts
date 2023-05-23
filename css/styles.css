@@ -87,6 +87,9 @@ main {
 .image {
     width: 75%;
     height: 70%;
+    max-width: 600px;
+    max-height: 700px;
+    object-fit: cover;
     margin: 50px auto;
 }
 
@@ -104,10 +107,6 @@ footer {
     padding: 10px;
 }
 
-footer div {
-    max-width: 170px;
-}
-
 footer p {
     font-size: 1.1rem;
     text-align: left;
@@ -122,12 +121,15 @@ footer p {
     text-align: center;
 }
 
-footer input {
-    border: 1px solid #fff;
-    border-radius: 10px;
-    margin: 10px auto;
-    padding: 10px;
-    min-width: 170px;
+.icons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fa-brands {
+    font-size: 2rem;
+    color: black;
 }
 
 .cta {

@@ -19,7 +19,7 @@ function createHTML(posts) {
     postsContainer.className = 'posts-container';
     postsContainer.id = posts.id;
 
-    const title = document.createElement('h2');
+    const title = document.createElement('p');
     title.innerText = posts.title.rendered;
     postsContainer.append(title);
 
