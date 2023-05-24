@@ -1,11 +1,13 @@
 @import url(variables.css);
 
 body {
-    margin: 0px;
+    margin: auto;
+    max-width: 1200px;
 }
 
 header, footer {
     background-color: var(--color-header-footer);
+    font-family: var(--header-font);
 }
 
 /*Header*/
@@ -14,7 +16,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: var(--header-font);
     padding: 10px;
 }
 
@@ -105,8 +106,8 @@ h1 {
 /*Footer*/
 
 footer {
-    font-family: var(--header-font);
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 10px;
 }
@@ -122,13 +123,16 @@ footer p {
 
 .copyright-text {
     font-size: 1.4rem;
-    text-align: center;
 }
 
 .icons {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.icons > a {
+    max-width: 35px;
 }
 
 .fa-brands {

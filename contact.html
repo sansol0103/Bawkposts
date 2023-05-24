@@ -52,18 +52,19 @@
       <form>
         <div class="box-style form-wrapper">
           <label for="name">Full name</label>
-          <input type="text" name="Full name" id="name">
-          <div class="form-error" id="nameError">Please enter your full name</div>
+          <input type="text" name="Full name" id="name" placeholder="Full name">
+          <div class="form-error" id="nameError">Your full name needs to be 5 characters or longer</div>
           <label for="email">Email</label>
-          <input type="email" name="Email address" id="email">
+          <input type="email" name="Email address" id="email" placeholder="someone@someone.com">
           <div class="form-error" id="emailError">Please enter a valid email address</div>
           <label for="subject">Subject</label>
-          <input type="text" name="Subject" id="subject">
+          <input type="text" name="Subject" id="subject" placeholder="Subject. Must be 15 characters or longer">
           <div class="form-error" id="subjectError">The subject must be 15 characters or longer</div>
           <label for="message">Message</label>
-          <textarea id="message"></textarea>
+          <textarea id="message" placeholder="Message. Must be 25 characters or longer"></textarea>
           <div class="form-error" id="messageError">Your message needs to be 25 characters or longer</div>
           <button class="cta contact-cta">Send message</button>
+          <div id="successMessage" class="success">Your message has been delivered</div>
         </div>
       </form>
     </main>

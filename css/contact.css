@@ -29,6 +29,15 @@ textarea {
     margin: 10px auto;
 }
 
+.success {
+    display: none;
+    background: green;
+    padding: 1rem;
+    color: white;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
 .contact-cta {
     font-size: 1.2rem;
     border-radius: 10px;
