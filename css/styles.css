@@ -79,6 +79,10 @@ main {
     font-family: var(--main-font);
 }
 
+h1 {
+    text-align: center;
+}
+
 .box-style {
     width: 80%;
     margin: 50px auto;

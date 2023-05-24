@@ -5,6 +5,10 @@
     display: flex;
 }
 
+h1 {
+    text-align: left;
+}
+
 .image:hover {
     cursor: pointer;
 }

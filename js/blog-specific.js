@@ -21,7 +21,7 @@ console.log(getPost());
 function createHTML(post) {
     const container = document.querySelector('.blog-post');
 
-    const title = document.createElement('h2');
+    const title = document.createElement('h1');
     title.innerText = post.title.rendered;
     container.append(title);
 

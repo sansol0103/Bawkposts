@@ -3,6 +3,10 @@ main {
     flex-direction: column;
 }
 
+h1 {
+    text-align: left;
+}
+
 .image {
     background: url(../images/Hedemora_1.webp);
 }

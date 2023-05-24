@@ -56,6 +56,8 @@
 
 .carousel-wrapper {
     display: flex;
+    margin: auto;
+    max-width: 980px;
 }
 
 .carousel {
@@ -91,6 +93,7 @@
     border-radius: .25rem;
     padding: 0.5rem;
     background-color: rgba(0, 0, 0, .4);
+    max-height: 340px;
 }
 
 .carousel-button:hover,
