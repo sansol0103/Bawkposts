@@ -16,8 +16,6 @@ async function getPost() {
     return post;
 }
 
-console.log(getPost());
-
 function createHTML(post) {
     const container = document.querySelector('.blog-post');
 

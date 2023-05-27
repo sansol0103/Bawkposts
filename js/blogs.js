@@ -1,4 +1,4 @@
-import { fullURL, page2URL, showAllPostsURL } from "./url.js";
+import { fullURL, page2URL, } from "./url.js";
 
 // Fetch
 
@@ -9,8 +9,6 @@ async function getPosts() {
 
     return posts;
 }
-
-console.log(getPosts());
 
 // Create HTML
 

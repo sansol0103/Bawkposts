@@ -8,9 +8,8 @@ async function getPost() {
     return posts;
 }
 
-console.log(getPost());
-
 //Create HTML
+
 function createHTML(posts) {
     if (posts.categories[0] === 3) {
     const container = document.querySelector('.featured-post');
