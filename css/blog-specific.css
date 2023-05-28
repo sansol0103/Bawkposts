@@ -31,3 +31,8 @@ h1 {
     max-width: 600px;
     width: 100%;
 }
+
+.content {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}

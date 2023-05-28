@@ -16,8 +16,6 @@ async function getPost() {
     return post;
 }
 
-console.log(getPost());
-
 function createHTML(post) {
     const container = document.querySelector('.blog-post');
 
@@ -56,10 +54,11 @@ function createHTML(post) {
 
     const content = document.createElement('div');
     content.innerHTML = post.content.rendered;
+    content.classList.add('content');
     container.append(content);
 
     const date = document.createElement('p');
-    date.innerText = post.date;
+    date.innerText = "Date posted: " + post.date;
     container.append(date);
 
     pageTitle.innerText += post.title.rendered;
