@@ -62,7 +62,7 @@
 
 .carousel {
     max-width: 830px;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     overflow-x: hidden;
     margin: auto;
@@ -84,7 +84,7 @@
 .carousel-button {
     z-index: 2;
     position: relative;
-    top: 50px;
+    top: 100px;
     background: none;
     border: none;
     font-size: 4rem;
