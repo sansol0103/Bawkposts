@@ -19,7 +19,7 @@ This is my Project Exam. Goal of this was to use what we've learned throughout t
 
 ### Installing
 
-1. Clone the repository: https://github.com/Noroff-FEU-Assignments/project-exam-1-sansol0103
+1. Clone the repository: https://github.com/sansol0103/Bawkposts
 
 ### Running 
 
