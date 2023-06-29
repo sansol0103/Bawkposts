@@ -38,6 +38,11 @@
         width: 100%;
     }
 
+    nav a:hover {
+        background-color: var(--color-header-anchors);
+        transition: 0.3s;
+    }
+
     .current {
         text-decoration: underline;
     }
@@ -78,6 +83,7 @@
 
     nav ul {
         display: block;
+        margin-left: 30px;
     }
 
     nav li {
