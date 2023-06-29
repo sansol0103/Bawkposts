@@ -7,6 +7,11 @@ h1 {
     text-align: left;
 }
 
+.temp-text {
+    font-size: 2rem;
+    margin: 50px auto;
+}
+
 .image {
     background: url(../images/Hedemora_1.webp);
 }
