@@ -42,6 +42,10 @@
     border-radius: 10px;
 }
 
+.chicken-fact-text {
+    text-align: left;
+}
+
 .featured-text {
     font-size: 1.6rem;
     display: flex;
