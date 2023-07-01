@@ -2,7 +2,11 @@
 
 body {
     margin: auto;
+}
+
+.no-stretch, main {
     max-width: 1200px;
+    width: 100%;
 }
 
 header, footer {
@@ -21,10 +25,6 @@ header {
 
 header p {
     margin: 0px 20px 0px 50px;
-}
-
-.title, .slogan {
-    margin: 0px 0px 0px 60px;
 }
 
 .title {
@@ -86,10 +86,13 @@ nav a, .return-home, .featured-post a, .read-more, .carousel > a {
 main {
     overflow: hidden;
     font-family: var(--main-font);
+    margin: auto;
 }
 
 h1 {
     text-align: center;
+    margin: 150px auto;
+    font-size: 3rem;
 }
 
 .box-style {
@@ -113,7 +116,7 @@ h1 {
 
 /*Footer*/
 
-footer {
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;

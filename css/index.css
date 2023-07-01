@@ -47,15 +47,19 @@
 }
 
 .featured-text {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     display: flex;
     justify-content: center;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .image {
     margin: 0px auto;
     object-fit: cover;
+}
+
+.featured-posts {
+    margin: 100px auto;
 }
 
 .carousel-wrapper {

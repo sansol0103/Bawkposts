@@ -1,8 +1,13 @@
 .back {
     color: black;
     text-decoration: none;
-    margin: 10px;
+    margin: 35px;
     display: flex;
+    font-size: 1.4rem;
+}
+
+.back:hover {
+    text-decoration: underline;
 }
 
 h1 {
