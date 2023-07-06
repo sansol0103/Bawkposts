@@ -1,9 +1,10 @@
 @import url(variables.css);
 
 @media (min-width: 500px) {
-    footer {
+    .footer {
         flex-direction: row;
         justify-content: space-around;
+        margin: auto;
     }
 }
 
@@ -11,6 +12,10 @@
     header {
         flex-wrap: wrap;
         justify-content: flex-start;
+    }
+
+    .title, .slogan {
+        margin: 0px 0px 0px 60px;
     }
 
     header label {
@@ -36,10 +41,12 @@
     nav a {
         padding: 10px;
         width: 100%;
+        transition: 0.3s;
     }
 
     nav a:hover {
         background-color: var(--color-header-anchors);
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
         transition: 0.3s;
     }
 

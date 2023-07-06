@@ -2,7 +2,11 @@
 
 body {
     margin: auto;
+}
+
+.no-stretch, main {
     max-width: 1200px;
+    width: 100%;
 }
 
 header, footer {
@@ -21,10 +25,6 @@ header {
 
 header p {
     margin: 0px 20px 0px 50px;
-}
-
-.title, .slogan {
-    margin: 0px 0px 0px 60px;
 }
 
 .title {
@@ -86,10 +86,14 @@ nav a, .return-home, .featured-post a, .read-more, .carousel > a {
 main {
     overflow: hidden;
     font-family: var(--main-font);
+    margin: auto;
 }
 
 h1 {
     text-align: center;
+    margin: 150px auto;
+    font-size: 3rem;
+    font-family: "Epiologue", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .box-style {
@@ -113,7 +117,7 @@ h1 {
 
 /*Footer*/
 
-footer {
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,6 +145,12 @@ footer p {
 
 .icons > a {
     max-width: 35px;
+    transition: 0.3s;
+}
+
+.icons > a:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
 }
 
 .fa-brands {
@@ -153,8 +163,11 @@ footer p {
     border-radius: 10px;
     text-decoration: none;
     color: black;
+    transition: 0.3s;
 }
 
 .cta:hover {
     background-color: #4ee05d;
+    transition: 0.3s;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
 }
