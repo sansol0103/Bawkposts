@@ -1,4 +1,4 @@
-import { showAllPostsURL } from './url.js';
+import { showAllPostsURL } from './misc/urls.js';
 
 async function getPost() {
     const response = await fetch(showAllPostsURL);

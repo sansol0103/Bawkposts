@@ -1,4 +1,4 @@
-import { fullURL, page2URL, } from "./url.js";
+import { fullURL, page2URL, } from "./misc/urls.js";
 
 // Fetch
 
