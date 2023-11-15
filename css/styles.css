@@ -1,19 +1,5 @@
 @import url(variables.css);
 
-body {
-    margin: auto;
-}
-
-.no-stretch, main {
-    max-width: 1200px;
-    width: 100%;
-}
-
-header, footer {
-    background-color: var(--color-header-footer);
-    font-family: var(--header-font);
-}
-
 /*Header*/
 
 header {
@@ -113,61 +99,4 @@ h1 {
 .wrapper {
     background-color: var(--color-wrapper);
     padding: 10px 0px;
-}
-
-/*Footer*/
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-}
-
-footer p {
-    font-size: 1.1rem;
-    text-align: left;
-}
-
-.close-p {
-    line-height: 0.2;
-}
-
-.copyright-text {
-    font-size: 1.4rem;
-}
-
-.icons {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.icons > a {
-    max-width: 35px;
-    transition: 0.3s;
-}
-
-.icons > a:hover {
-    transition: 0.3s;
-    transform: scale(1.1);
-}
-
-.fa-brands {
-    font-size: 2rem;
-    color: black;
-}
-
-.cta {
-    padding: 2px 12px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: black;
-    transition: 0.3s;
-}
-
-.cta:hover {
-    background-color: #4ee05d;
-    transition: 0.3s;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
 }

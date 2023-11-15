@@ -27,6 +27,8 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/blogs.css">
         <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="dist/css/styles.css">
       </head>
   <body>
     <header>
@@ -53,33 +55,21 @@
       <button class="toggle">Show all posts</button>
     </main>
     <footer>
-      <div class="no-stretch footer">
-        <div class="copyright">
-          <p class="copyright-text">Copyright &copy;</p>
-        </div>
-        <div class="contact-info">
-          <div class="close-p">
-            <p>Chickenroad</p>
-            <p>1234 Chicken</p>
+      <div class="d-flex flex-wrap justify-content-between align-items-center py-3 footer-no-stretch">
+          <div class="col-md-4 d-flex align-items-center">
+              <p class="mb-md-0 text-muted copyright-text">Copyright &copy;</p>
           </div>
-          <div>
-            <p>+47 12 34 56 78</p>
+          <div class="nav col-md-4 justify-content-end list-unstyled d-flex icons">
+              <a class="ms-3 text-decoration-none fs-4" href="https://instagram.com"
+                  ><i class="fa-brands fa-instagram text-dark"></i
+              ></a>
+              <a class="ms-3 text-decoration-none fs-4" href="https://facebook.com"
+                  ><i class="fa-brands fa-facebook text-dark"></i
+              ></a>
+              <a class="ms-3 text-decoration-none fs-4" href="https://twitter.com"
+                  ><i class="fa-brands fa-twitter text-dark"></i
+              ></a>
           </div>
-          <div class="close-p">
-            <p>bawkposts@gmail.com</p>
-          </div>
-        </div>
-        <div class="icons">
-          <a href="https://instagram.com"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://facebook.com"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://twitter.com"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-        </div>
       </div>
     </footer>
     <script src="js/blogs.js" type="module"></script>
